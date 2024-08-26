@@ -14,7 +14,7 @@ import qs from 'qs';
 import { AppContext, Variables } from '../..app/api/routes';
 import { getRecords } from '../data/data';
 import { getForm } from '../api/forms';
-import { ApiConfig, config } from '../../db/routes';
+import { ApiConfig, config } from '../db/routes';
 import {
   filterCreateFieldAccess,
   filterReadFieldAccess,

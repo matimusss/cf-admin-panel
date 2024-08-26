@@ -1,6 +1,6 @@
 import { drizzle } from 'drizzle-orm/d1';
 import { and, eq, mapColumnsInAliasedSQLToAlias, param, ViewBaseConfig } from 'drizzle-orm';
-import { tableSchemas } from '../../db/routes';
+import { tableSchemas } from '../db/routes';
 import { getOperationDeleteResult } from '../auth/auth-helpers';
 import { convertUint8ArrayToHex, validateScryptHash } from 'lucia/dist/utils/crypto';
 import { createFilterOptions, getButtonBaseUtilityClass, tableHeadClasses } from '@mui/material';
