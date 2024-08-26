@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+h1,
+p {
+  font-family: Lato;
+}
+
+
+
+.choices__item--selectable {
+  background-color: #f0f0f0; /* Cambiar el fondo */
+  color: #333; /* Cambiar el color del texto */
+  border-radius: 5px; /* Cambiar el borde */
+  padding: 10px; /* Cambiar el relleno */
+}
+
+.choices__item {
+  background-color: #f0f0f0; /* Cambiar el fondo */
+  color: #333; /* Cambiar el color del texto */
+  border-radius: 5px; /* Cambiar el borde */
+  padding: 10px; /* Cambiar el relleno */
+}
+
+
+.choices__button {
+  background-color: #ff0000; /* Cambiar el fondo del botón */
+  color: #fff; /* Cambiar el color del texto del botón */
+  border: none; /* Quitar el borde */
+  padding: 5px 10px; /* Cambiar el relleno */
+  border-radius: 3px; /* Cambiar el borde del botón */
+}
