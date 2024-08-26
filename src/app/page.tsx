@@ -9,7 +9,7 @@ export default function Home() {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
-    const res = await fetch(`/api/hello?q=${input}`)
+    const res = await fetch(`/hello?q=${input}`)
 		const data = (await res.json()) as { message: string; }
     setResponse(data?.message)
     setInput('')
