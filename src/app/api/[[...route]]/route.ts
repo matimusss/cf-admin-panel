@@ -11,13 +11,19 @@ import { Bindings } from './../../../types/bindings';
 import { initializeLucia } from './../../../auth/lucia';
 
 export const runtime = 'edge'
-
-
+export type Variables = {
+  authRequest: AuthRequest;
+  session?: Session;
+  user?: User;
+};
 
 const app = new Hono<{ Bindings: Bindings; Variables: Variables }>();
 // originaL // const app = new Hono().basePath('/api')
 //ORIGINAL // app.use('/*', cors())
 //CHEKEAR
+
+export type AppContext = Context<{ Bindings: Bindings; Variables: Variables }>;
+
 app.use('*', async (ctx, next) => {
   const path = ctx.req.path;
   if (!path.includes('/public')) {

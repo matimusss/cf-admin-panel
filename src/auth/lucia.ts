@@ -18,7 +18,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 //local
 import { sonicAdapter } from './sonicAdapter';
-import { Variables } from '../server';
+import { AppContext, Variables } from './../app/api/[[...route]]/route';
 
 import { OAuthRequestError } from "@lucia-auth/oauth";
 import { github } from "@lucia-auth/oauth/providers";

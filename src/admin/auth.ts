@@ -11,7 +11,7 @@ import {
 } from '../auth/lucia';
 
 import qs from 'qs';
-import { AppContext, Variables } from './../server';
+import { AppContext, Variables } from './../app/api/[[...route]]/route';
 import { getRecords } from '../data/data';
 import { getForm } from '../api/forms';
 import { ApiConfig, config } from '../db/routes';

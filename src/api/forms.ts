@@ -1,5 +1,5 @@
-import { apiConfig } from '../../db/routes';
-import { AppContext } from '../../server';
+import { apiConfig } from '../db/routes';
+import { AppContext, Variables } from './../app/api/[[...route]]/route';
   import { getSchemaFromTable } from '../data/d1-data';
 import { singularize } from '../util/utils';
 

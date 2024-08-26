@@ -5,7 +5,7 @@ import * as userKeys from './schema/userKeys';
 import * as userSessions from './schema/userSessions';
 import * as pages from './schema/pages';
 import * as assets from './schema/assets';
-import { AppContext } from '../server';
+import { AppContext, Variables } from './../app/api/[[...route]]/route';
 import { isAdminOrEditor } from './config-helpers';
 
 

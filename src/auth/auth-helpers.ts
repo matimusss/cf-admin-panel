@@ -2,7 +2,7 @@ import { tableSchemas } from '../db/routes';
 import { drizzle } from 'drizzle-orm/d1';
 import { isNotNull } from 'drizzle-orm';
 import { getRecords } from '../data/data';
-import { AppContext } from '../server';
+import { AppContext, Variables } from './../app/api/[[...route]]/route';
 import type { SonicJSFilter, ApiConfig } from './../db/routes';
 
 export const hasUser = async (ctx: AppContext) => {
